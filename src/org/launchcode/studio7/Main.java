@@ -4,9 +4,21 @@ public class Main {
 
     public static void main(String[] args){
 
-        // TODO: Declare and initialize a CD and a DVD object.
+        var cd = new CD(700, "Final Fantasy 7", "CD-ROM", 1.2);
 
-        // TODO: Call each CD and DVD method to verify that they work as expected.
+        var dvd = new DVD(8000, "Halo 3", "DVD-ROM", 1.2);
+
+        var vinyl = new Vinyl(340, "Let It Be", "Vinyl LP", 0.6);
+
+        cd.spinDisc();
+        dvd.spinDisc();
+        cd.readWavelength();
+        dvd.readWavelength();
+        cd.writeData();
+        dvd.writeData();
+
+
+        System.out.println(vinyl.getName() + " is spinning at 45 RPM");
 
     }
 }

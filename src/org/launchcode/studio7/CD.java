@@ -1,10 +1,31 @@
 package org.launchcode.studio7;
 
-public class CD {
+public class CD extends BaseDisc implements OpticalDisc {
 
-    // TODO: Implement your custom interface.
+    public CD(int storageCapacity, String name, String discType, double thickness) {
+        super(storageCapacity, name, discType, thickness);
+    }
 
-    // TODO: Determine which fields, methods, and constructors can be extended from the base class and which ones
-    //  need to be declared separately.
+    @Override
+    public void readWavelength() {
+        System.out.println("CDs are read at a wavelength of 780nm.");
 
+    }
+
+    @Override
+    public void writeData() {
+        System.out.println("CD is writing at 153.6 kB/s");
+
+    }
+
+    @Override
+    public void spinDisc() {
+        System.out.println("CD spinning at 500 RPM.");
+
+    }
+
+    @Override
+    public void spinMax() {
+
+    }
 }
